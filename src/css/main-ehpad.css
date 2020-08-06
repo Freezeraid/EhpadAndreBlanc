@@ -1,0 +1,154 @@
+
+/* --------------------------------------------------------------------- */
+/*                          CSS MAIN COMPOSENTS                          */
+/* --------------------------------------------------------------------- */
+
+:root{
+--td-padding: 2%;
+--first-td-width: 9%;
+--color-grey-cell: #E8E8E8;
+}
+
+
+.categories-content {
+    margin-bottom: var(--big-title-space);
+    background-color: var(--color-purewhite);
+    border: 1px solid var(--color-greylight);
+    box-sizing: border-box;
+}
+
+.categories-content > * {
+    display: inline-block;
+    width: var(--categories-subcontent);
+    padding: var(--categories-subcontent-padding);
+    box-sizing: border-box;    
+}
+
+.categories-content > img {
+    vertical-align: top;
+}
+
+
+tbody, table {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: var(--color-purewhite);
+}
+
+td, th {
+    padding: var(--td-padding);
+    border: 1px solid var(--color-greylight);
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+
+th, td:first-child {
+    background-color: var(--color-grey-cell);
+    font-weight: 900;
+}
+
+td:first-child {
+    text-align: center;
+    width: var(--first-td-width);
+    padding: 1%;
+}
+
+td > ul > li {
+    list-style-type: none;
+}
+
+
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                          CSS EHPAD RESPONSIVE                          */
+/* -------------------------------------------------------------------------- */
+
+/* ------------------------ Width >1920px ------------------------ */
+
+
+@media screen and (min-width: 1920px) {
+
+    :root {
+        --td-padding: 1.8%;
+        --first-td-width: 8.5%;
+    }
+}
+
+
+/* ------------------------ Width <1366px ------------------------ */
+
+
+@media screen and (min-width: 1025px) and (max-width: 1367px) {
+    :root {
+        --td-padding: 2.2%;
+        --first-td-width: 9%;
+    }
+}
+
+
+/* ------------------------ Width <1024px ------------------------ */
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    :root {
+        --td-padding: 2.5%;
+        --first-td-width: 9.5%;
+    }
+}
+
+
+/* ------------------------ Width <768px ------------------------ */
+
+
+@media screen and (min-width: 641px) and (max-width: 768px) {
+    :root {
+        --td-padding: 2.8%;
+        --first-td-width: 10%;
+    }
+}
+
+
+/* ------------------------ Width < 640px ------------------------ */
+
+
+@media screen and (min-width: 481px) and (max-width: 640px) {
+    :root {
+        --td-padding: 3.1%;
+        --first-td-width: 10.5%;
+    }
+}
+
+
+/* ------------------------ Width <480px ------------------------ */
+
+
+@media screen and (min-width: 361px) and (max-width: 480px) {
+    :root {
+        --td-padding: 3.4%;
+        --first-td-width: 11%;
+    }
+}
+
+
+/* ------------------------ Width <360px ------------------------ */
+
+
+@media screen and (min-width: 321px) and (max-width: 360px) {
+    :root {
+        --td-padding: 3.7%;
+        --first-td-width: 11.5%;
+    }
+}
+
+
+/* ------------------------ Width : <320px ------------------------ */
+
+
+@media screen and (max-width: 320px) {
+    :root {
+        --td-padding: 4%;
+        --first-td-width: 12%;
+    }
+}

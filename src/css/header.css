@@ -1,0 +1,214 @@
+/* ------------------------------------------------------------------ */
+/*                          CSS HEADER TOTAL                          */
+/* ------------------------------------------------------------------ */
+
+
+:root {
+    --font-nav: 1vw;
+    --image-nav-height: calc(var(--header-content-height)*0.65);
+    --padding-nav: 5%;
+    --margin-nav-elements: 1.2%;
+    --margin-nav-firstelement: 35%;
+}
+
+header {
+    background-color: var(--color-purewhite);
+    height: var(--header-content-height);
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid var(--color-greylight);
+    width: 100%;
+    z-index: 9999;
+    box-sizing: border-box;
+}
+
+nav {
+    display: inline-block;
+    width: 100%;
+    padding: 0 var(--padding-nav);
+    box-sizing: border-box;
+    vertical-align: top;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
+nav > * {
+    transform: translateZ(0);
+}
+
+
+/* ------------------------ CSS HEADER NAV ELEMENTS ------------------------ */
+
+
+nav a:first-of-type {
+    margin-right: var(--margin-nav-firstelement);
+}
+
+nav a:not(:first-of-type) {
+    margin: 0 var(--margin-nav-elements);
+    font-weight: var(--font-heavy-weight);
+    font-size: var(--font-nav);
+    text-transform: uppercase;
+    border-bottom: 1px solid transparent;
+}
+
+nav a > img {
+    height: var(--image-nav-height);
+    vertical-align: middle;
+}
+
+nav a:hover {
+    border-color: var(--color-pureblack);
+    transition: all ease-in-out 0.2s;
+}
+
+#responsive-menu {
+    display: none;
+    float: right;
+    height: var(--image-nav-height);
+    font-weight: var(--font-heavy-weight);
+    text-transform: uppercase;
+    font-size: var(--font-nav);
+}
+
+#documentationNavElement {
+    position: relative;
+    transition: color ease-in 1s;
+    transition: text-decoration ease-in 1s;
+}
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------------------------------------------------- */
+/*                          CSS HEADER NAV RESPONSIVE                          */
+/* --------------------------------------------------------------------------- */
+
+
+/* ------------------------ Width : >1920px ------------------------ */
+
+
+@media screen and (min-width: 1920px) {
+
+    :root {
+        --font-nav: 0.9vw;
+        --padding-nav: 4%;
+        --margin-nav-elements: 1.1%;
+        --margin-nav-firstelement: 30%;
+    }
+    
+}
+
+
+/* ------------------------ Width : <1366px ------------------------ */
+
+
+@media screen and (min-width: 1025px) and (max-width: 1367px) {
+
+    :root {
+        --font-nav: 1.1vw;
+        --padding-nav: 6%;
+        --margin-nav-elements: 0.85%;
+        --margin-nav-firstelement: 33%;
+    }
+    
+}
+
+
+/* ------------------------ Width : <1024px ------------------------ */
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+    :root {
+        --font-nav: 1.3vw;
+        --padding-nav: 7%;
+        --margin-nav-elements: 0.95%;
+        --margin-nav-firstelement: 20%;
+    }
+    
+}
+
+/* ------------------------ Width : < 768px ------------------------ */
+
+
+@media screen and (max-width: 768px) {
+    nav a:not(:first-of-type) {
+        display: none;
+    }
+    #responsive-menu {
+        display: inline-block;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 768px) {
+    
+    :root {
+        --padding-nav: 8%;
+        --font-nav: 1.4vw;
+    }
+    
+}
+
+
+
+/* ------------------------ Width : < 640px ------------------------ */
+
+
+@media screen and (min-width: 481px) and (max-width: 640px) {
+
+    :root {
+        --padding-nav: 9%;
+        --font-nav: 1.7vw;
+    }
+    
+}
+
+
+
+/* ------------------------ Width : <480px ------------------------ */
+
+
+@media screen and (min-width: 361px) and (max-width: 480px) {
+
+    :root {
+        --padding-nav: 10%;
+        --font-nav: 2vw;
+    }
+    
+}
+
+
+/* ------------------------ Width : <360px ------------------------ */
+
+
+@media screen and (min-width: 321px) and (max-width: 360px) {
+
+    :root {
+        --padding-nav: 12%;
+        --font-nav: 2.3vw;
+    }
+    
+}
+
+
+/* ------------------------ Width : <320px ------------------------ */
+
+
+@media screen and (max-width: 320px) {
+
+    :root {
+        --padding-nav: 15%;
+        --font-nav: 2.3vw;
+    } 
+}

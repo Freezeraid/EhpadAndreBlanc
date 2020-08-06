@@ -1,0 +1,418 @@
+/* ------------------------------------------------------------------ */
+/*                          CSS FOOTER TOTAL                          */
+/* ------------------------------------------------------------------ */
+
+
+:root {
+    --footer-content-width: 70%;
+    --footer-infos-width: 30%;
+    --font-input-textarea: 1vw;
+    --label-margin: 1vh;
+    --input-margin: 3.5vh;
+    --label-padding: 1%;
+    --first-ul-margin-bottom: 20vh;
+    --padding-footer-infos: 3%;
+    --padding-footer-li: 6%;
+    --margin-top-footer-infos: 3vh;
+}
+
+
+
+#infos-footer {
+    background-image: url("../img/footer-pierrefeu.jpg");
+    background-size: cover;
+    margin: 0 var(--global-content-sidemargin);
+    padding: var(--global-content-padding);
+    width: var(--global-content-width);
+    color: var(--color-purewhite);
+    box-sizing: border-box;
+}
+
+
+/* ------------------------ CSS FOOTER CONTENT ------------------------ */
+
+
+#infos-footer > h2 {
+    margin: var(--medium-space) 0;
+}
+
+#infos-footer > hr {
+    margin-bottom: var(--classic-categorie-space);
+}
+
+.footer-content {
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+/* ------------------------ CSS FOOTER CONTACT ------------------------ */
+
+
+.footer-content:first-of-type {
+    width: var(--footer-content-width);
+    padding-right: var(--global-content-padding);
+    border-right: 1px solid var(--color-grey);
+    box-sizing: border-box;
+}
+
+.footer-content:first-of-type label  {
+    display: block;
+    margin-bottom: var(--label-margin);
+    font-family: var(--title-font);
+    font-style: italic;
+    font-weight: var(--font-heavy-weight);
+}
+
+.footer-content:first-of-type input, .footer-content:first-of-type textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: var(--input-margin);
+    min-height: var(--medium-space);
+    padding: var(--label-padding);
+    border-radius: var(--classic-border-radius);
+    border: 0;
+    font-size: var(--font-input-textarea);
+    font-family: var(--classic-font);
+    font-weight: var(--font-classic-weight);
+}
+
+
+/* ------------------------ CSS FOOTER INFOS ------------------------ */
+
+
+.footer-content:nth-of-type(2) {
+    padding-left: var(--padding-footer-infos);
+    width: var(--footer-infos-width);
+    box-sizing: border-box;
+}
+
+.footer-content:nth-of-type(2) h3 {
+    margin: var(--low-space) 0;
+}
+
+.footer-content:nth-of-type(2) hr {
+    margin-bottom: var(--classic-categorie-space);
+}
+
+.contact-informations:first-of-type > ul {
+    margin-bottom: var(--first-ul-margin-bottom);
+}
+
+.footer-content:nth-of-type(2) li {
+    border-bottom: 1px solid transparent;
+    display: table;
+    box-sizing: border-box;
+    margin: 0 0 var(--medium-space) var(--padding-footer-li);
+}
+
+.footer-content:nth-of-type(2) li:hover:not(:nth-child(5)) {
+    transition: all ease-in-out 0.2s;
+    border-color: var(--color-purewhite);
+}
+
+#footer-infos li, #footer-infos a > li {
+    text-align: center;  
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------------------------------------------------- */
+/*                              CSS FOOTER RESPONSIVE                          */
+/* --------------------------------------------------------------------------- */
+
+/* ------------------------ Width : > 1920px ------------------------ */
+
+
+@media screen and (min-width: 1920px) {
+
+    :root {
+        --footer-content-width: 70%; 
+        --footer-infos-width: 30%; 
+        --font-input-textarea: 0.85vw; 
+        --label-margin: 1.2vh; 
+        --input-margin: 4vh;
+        --label-padding: 1.05%;
+        --first-ul-margin-bottom: 15vh;
+        --padding-footer-infos: 3%; 
+    }
+
+    .footer-content form .en-savoir-plus {
+        margin-bottom: 3vh;
+    }
+}
+
+
+/* ------------------------ Width : <1366px ------------------------ */
+
+
+@media screen and (min-width: 1025px) and (max-width: 1366px) {
+
+    :root {
+        --footer-content-width: 70%;
+        --footer-infos-width: 30%;
+        --font-input-textarea: 0.9vw;
+        --label-margin: 1vh;
+        --input-margin: 3.5vh;
+        --label-padding: 1%;
+        --first-ul-margin-bottom: 22.5vh;
+        --padding-footer-infos: 3%;
+    }
+
+    .footer-content form .en-savoir-plus {
+        margin-bottom: 3vh;
+    }
+}
+
+
+/* ------------------------ Width : <1024px ------------------------ */
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+    :root {
+        --footer-content-width: 70%;
+        --footer-infos-width: 30%;
+        --font-input-textarea: 1.2vw;
+        --label-margin: 0.9vh;
+        --input-margin: 3vh;
+        --label-padding: 1.05%;
+        --first-ul-margin-bottom: 25vh;
+        --padding-footer-infos: 3%;
+    }
+
+    .footer-content form .en-savoir-plus {
+        margin-bottom: 3vh;
+    }
+}
+
+
+/* ------------------------ Width : <768px ------------------------ */
+
+
+@media screen and (min-width: 641px) and (max-width: 768px) {
+
+    :root {
+        --footer-content-width: 100%;
+        --footer-infos-width: 100%;
+        --font-input-textarea: 1.5vw;
+        --label-margin: 0.8vh;
+        --input-margin: 2.7vh;
+        --label-padding: 1.1%;
+        --first-ul-margin-bottom: 0vh;
+        --padding-footer-infos: 0%;
+        --padding-footer-li: 0%;
+        --margin-top-footer-infos: 5%;
+    }
+    
+    .footer-content:first-of-type > form {
+        width: 100%;
+        border-bottom: 1px solid var(--color-grey);
+    }
+    
+
+    .footer-content:first-of-type {
+        border-right: 0px solid var(--color-grey);
+    }   
+    
+    .footer-content:nth-of-type(2) li {
+        margin: 0 auto var(--medium-space) auto;
+    }
+
+    .footer-content form .en-savoir-plus {
+        margin-bottom: 3vh;
+    }
+
+    .contact-informations {
+        margin-top: var(--margin-top-footer-infos);
+        text-align:center;
+        display: inline-block;
+        width: 50%;
+    }
+}
+
+
+/* ------------------------ Width : < 640px ------------------------ */
+
+
+@media screen and (min-width: 481px) and (max-width: 640px) {
+
+    :root {
+        --footer-content-width: 100%;
+        --footer-infos-width: 100%;
+        --font-input-textarea: 2vw;
+        --label-margin: 0.7vh;
+        --input-margin: 2.4vh;
+        --label-padding: 1.15%;
+        --first-ul-margin-bottom: 0vh;
+        --padding-footer-infos: 0%;
+        --padding-footer-li: 0%;
+        --margin-top-footer-infos: 6%;
+    }
+    
+    .footer-content:first-of-type > form {
+        width: 100%;
+        border-bottom: 1px solid var(--color-grey);
+    }
+
+    .footer-content:nth-of-type(2) li {
+        margin: 0 auto var(--medium-space) auto;
+    }
+
+    .footer-content:first-of-type {
+        border-right: 0px solid var(--color-grey);
+    }    
+
+    .footer-content form .en-savoir-plus {
+        margin-bottom: 3vh;
+    }
+
+    .contact-informations {
+        margin-top: var(--margin-top-footer-infos);
+        display: inline-block;
+        text-align:center;
+        width: 50%;
+    }
+}
+
+
+/* ------------------------ Width : < 480px ------------------------ */
+
+
+@media screen and (min-width: 361px) and (max-width: 480px) {
+
+    :root {
+        --footer-content-width: 100%;
+        --footer-infos-width: 100%;
+        --font-input-textarea: 2.5vw;
+        --label-margin: 0.6vh;
+        --input-margin: 2vh;
+        --label-padding: 1.2%;
+        --first-ul-margin-bottom: 0vh;
+        --padding-footer-infos: 0%;
+        --padding-footer-li: 0%;
+        --margin-top-footer-infos: 7%;
+    }
+    
+    .footer-content:first-of-type > form {
+        width: 100%;
+        border-bottom: 1px solid var(--color-grey);
+    }
+
+    .footer-content:nth-of-type(2) li {
+        margin: 0 auto var(--medium-space) auto;
+    }
+
+    .footer-content:first-of-type {
+        border-right: 0px solid var(--color-grey);
+    }    
+    
+    .footer-content:first-of-type > form  .en-savoir-plus {
+        margin-bottom: 3vh;
+    }
+
+    .contact-informations {
+        margin-top: var(--margin-top-footer-infos);
+        display: inline-block;
+        text-align:center;
+        width: 50%;
+    }
+}
+
+
+/* ------------------------ Width : < 360px ------------------------ */
+
+
+@media screen and (min-width: 321px) and (max-width: 360px) {
+
+    :root {
+        --footer-content-width: 100%;
+        --footer-infos-width: 100%;
+        --font-input-textarea: 3vw;
+        --label-margin: 0.55vh;
+        --input-margin: 1.8vh;
+        --label-padding: 1.25%;
+        --first-ul-margin-bottom: 0vh;
+        --padding-footer-infos: 0%;
+        --padding-footer-li: 0%;
+        --margin-top-footer-infos: 8%;
+    }
+
+    
+    .footer-content:first-of-type > form {
+        width: 100%;
+        border-bottom: 1px solid var(--color-grey);
+    }
+
+    .footer-content:nth-of-type(2) li {
+        margin: 0 auto var(--medium-space) auto;
+    }
+
+    .footer-content:first-of-type {
+        border-right: 0px solid var(--color-grey);
+    }    
+
+    .footer-content:first-of-type > form  .en-savoir-plus {
+        margin-bottom: 5vh;
+    }
+
+    .contact-informations{
+        margin-top: var(--margin-top-footer-infos);
+        display: inline-block;
+        text-align:center;
+        width: 50%;
+    }
+}
+
+
+/* ------------------------ Width : < 320px ------------------------ */
+
+
+@media screen and (max-width: 320px) {
+
+    :root {
+        --footer-content-width: 100%;
+        --footer-infos-width: 100%;
+        --font-input-textarea: 3.5vw;
+        --label-margin: 0.5vh;
+        --input-margin: 1.6vh;
+        --label-padding: 1.3%;
+        --first-ul-margin-bottom: 0vh;
+        --padding-footer-infos: 0%;
+        --padding-footer-li: 0%;
+        --margin-top-footer-infos: 8.5%;
+    }
+
+    .footer-content:first-of-type > form {
+        width: 100%;
+        border-bottom: 1px solid var(--color-grey);
+    }
+
+    .footer-content:nth-of-type(2) li {
+        margin: 0 auto var(--medium-space) auto;
+    }
+
+    .footer-content:first-of-type {
+        border-right: 0px solid var(--color-grey);
+    }    
+
+    .footer-content:first-of-type .en-savoir-plus {
+        margin-bottom: 5vh;
+    }
+
+    .contact-informations{
+        margin-top: var(--margin-top-footer-infos);
+        display: inline-block;
+        text-align:center;
+        width: 50%;
+    }
+}

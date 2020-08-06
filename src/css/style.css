@@ -1,0 +1,555 @@
+/* -------------------------------------------------------------------------- */
+/*                          CSS GLOBAL HARMONISATION                          */
+/* -------------------------------------------------------------------------- */
+
+:root {
+    /* FONT FAMILY VARIABLES */
+    --title-font: 'Merriweather', Helvetica, Arial, sans-serif;
+    --classic-font: 'Roboto', Helvetica, Arial, sans-serif;
+
+
+    /* SIZE VARIABLES */
+    --title-principal-top: -15vh;
+    --title-principal-left: 30%;
+
+    --header-content-height: 8vh;
+    --button-height: 6vh;
+    --global-content-width: 90%;
+    --page-para-introduction-width: 60%;
+    --green-button-width: 40%;
+    --title-principal-width: 15%;
+    --categories-subcontent: 50%;
+    --hr-width: 20%;
+
+    --global-content-padding: 3%;
+    --categories-subcontent-padding: 2.5%;
+
+    --global-content-sidemargin: calc((100% - var(--global-content-width)) / 2);
+    --big-title-space: 10vh;
+    --classic-categorie-space: 5vh;
+    --medium-space: 3vh;
+    --low-space: 1.5vh;
+
+    --classic-border-radius: 0.3vw;
+
+    /* COLOR VARIABLES */
+    --color-purewhite: #FFF;
+    --color-transparencywhite: rgba(255, 255, 255, 0.85);
+    --color-lightbackground: #F2F2F2;
+    --color-greylight: #D2D2D2;
+    --color-grey: #A2A2A2;
+    --color-bluelight: #35BFBF;
+    --color-pureblack: #000;
+    --green-color: #4CAF50;
+    --green-color-hover: #347737;
+    --red-color: #D9534F;
+    --red-color-hover: #C9302C;
+
+    /* FONT SIZE VARIABLES */
+    --font-classic-weight: 400;
+    --font-heavy-weight: 700;
+
+    --font-classic: 1.10vw;
+    --font-h1: 3vw;
+    --font-h2: 2.5vw;
+    --font-h3: 1.8vw;
+    --font-pageintroduction: 1.4vw;
+    --font-paragrapheintroduction: 1vw;
+    --font-button: 1vw;
+}
+
+/* ------------------------ CSS WEBSITE STYLE ------------------------ */
+
+html {
+    font-family: var(--classic-font);
+    font-weight: var(--font-classic-weight);
+    scroll-behavior: smooth;
+    font-size: var(--font-classic);
+}
+
+body {
+    overflow-x: hidden;
+}
+
+main {
+    background-color: var(--color-lightbackground);
+    border-left: 1px solid var(--color-greylight);
+    border-right: 1px solid var(--color-greylight);
+    margin: var(--header-content-height) var(--global-content-sidemargin) 0 var(--global-content-sidemargin);
+    padding: var(--global-content-padding);
+    width: var(--global-content-width);
+    box-sizing: border-box;
+}
+
+hr {
+    border: 1px solid #FFBF00;
+    box-sizing: border-box;
+    width: var(--hr-width);
+    background:#FFBF00
+}
+
+strong {
+    font-weight: var(--font-heavy-weight);
+}
+
+a, a:link, a:visited, a:active, a:checked, a:hover {
+    color: inherit; 
+    text-decoration: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--title-font);
+    font-weight: var(--font-heavy-weight);
+    text-align: center;
+}
+
+h1 {
+    font-size: var(--font-h1);
+    text-transform: uppercase;
+    z-index: 1;
+    width: 100%;
+    margin: var(--big-title-space) 0;
+}
+
+h2 {
+    font-style: italic;
+    font-size: var(--font-h2);
+    margin: var(--big-title-space) 0 var(--low-space) 0;
+}
+
+h3 {
+    font-style: italic;
+    text-align: center;
+    font-size: var(--font-h3);
+}
+
+#title-principal {
+    position: relative;
+}
+
+#title-principal img {
+    position: absolute;
+    top: var(--title-principal-top);
+    left: var(--title-principal-left);
+    width: var(--title-principal-width);
+}
+
+main > hr {
+    margin-bottom: var( --classic-categorie-space);
+}
+
+.page-introduction {
+    width: var(--page-para-introduction-width);
+    display: block;
+    margin: 0 auto var(--big-title-space) auto;
+    font-size: var(--font-pageintroduction);
+    font-style: italic;
+}
+
+.paragraphe-introduction {
+    width: var(--page-para-introduction-width);
+    display: block;
+    margin: 0 auto var(--classic-categorie-space) auto;
+    font-size: var(--font-paragrapheintroduction);
+    font-style: italic;
+}
+
+.en-savoir-plus {
+    margin: var(--classic-categorie-space) auto 0 auto;
+    width: var(--green-button-width);
+    display: block;
+    height: var(--button-height);
+    background-color: var(--green-color);
+    border: 0;
+    border-radius: var(--classic-border-radius);
+    color: #FFF;
+    font-size: var(--font-button);
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.en-savoir-plus:hover {
+    background-color: var(--green-color-hover);
+    transition: all ease-in-out 0.2s;
+}
+
+.suppression-button {
+    margin: auto auto auto auto;
+    width: 100%;
+    display: block;
+    height: var(--button-height);
+    background-color: var(--red-color);
+    border: 0;
+    border-radius: var(--classic-border-radius);
+    color: #FFF;
+    font-size: var(--font-button);
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.suppression-button:hover {
+    background-color: var(--red-color-hover);
+    transition: all ease-in-out 0.2s;
+}
+
+
+/* ------------------------ CSS FIX ANCHOR ------------------------ */
+
+
+.anchor {
+    display: block;
+    position: relative;
+    top: calc(0vh - var(--header-content-height));
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0
+}
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------------------- */
+/*                          CSS GLOBAL RESPONSIVE                   */
+/* ---------------------------------------------------------------- */
+
+/* ------------------------ Width >1920px ------------------------ */
+
+
+@media screen and (min-width: 1920px) {
+    
+    :root {   
+        --title-principal-top: -13vh;
+        --title-principal-left: 30%;
+        --header-content-height: 9.5vh;
+        --button-height: 6.5vh;
+        --page-para-introduction-width: 55%;
+        --green-button-width: 30%;
+        --title-principal-width: 15%;
+        --hr-width: 18%;
+        --categories-subcontent-padding: 3.5%;
+        --main-content-margin: var(--header-content-height) var(--global-content-sidemargin) 0 var(--global-content-sidemargin);
+        --big-title-space: calc(10vh * 1.2);
+        --classic-categorie-space: calc(5vh * 1.2);
+        --medium-space: calc(3vh * 1.2);
+        --low-space: calc(1.5vh * 1.2);
+        --classic-border-radius: 0.3vw;
+        --font-classic: 0.9vw;
+        --font-h1: 2.7vw;
+        --font-h2: 2.3vw;
+        --font-h3: 1.7vw;
+        --font-pageintroduction: 1.2vw;
+        --font-paragrapheintroduction: 0.9vw;
+        --font-button: 1vw;
+    }
+}
+
+
+
+
+/* ------------------------ Width : <1366px ------------------------ */
+
+
+@media screen and (min-width: 1025px) and (max-width: 1367px) {
+
+    .en-savoir-plus {
+        margin: 5vh auto 0 auto;
+    }
+    
+    .bx-wrapper .bx-controls-direction a:first-child {
+        left: -3.8%;
+    }
+    
+    .bx-wrapper .bx-controls-direction a:last-child {
+        right: -3.8%;
+    }
+
+    :root {   
+        --title-principal-top: -12vh; 
+        --title-principal-left: 30%; 
+        --header-content-height: 8vh; 
+        --button-height: 6.2vh;
+        --page-para-introduction-width: 60%; 
+        --green-button-width: 45%;
+        --title-principal-width: 14%; 
+        --hr-width: 23%;
+        --categories-subcontent-padding: 2.2%; 
+        --big-title-space: calc(10vh * 0.8); 
+        --classic-categorie-space: calc(5vh * 0.8); 
+        --medium-space: calc(3vh * 0.8); 
+        --low-space: calc(1.5vh * 0.8);
+        --classic-border-radius: 0.4vw; 
+        --font-classic: 1.3vw;
+        --font-h1: 4vw;
+        --font-h2: 3.3vw;
+        --font-h3: 2.1vw;
+        --font-pageintroduction: 1.5vw;
+        --font-paragrapheintroduction: 1.1vw; 
+        --font-button: 1.3w;
+    }
+}
+
+
+/* ------------------------ Width : <1024 ------------------------ */
+
+
+@media screen and (min-width: 769px) {
+
+    .categories-content {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+    .en-savoir-plus {
+        margin: 4vh auto 0 auto;
+    }
+    
+    .bx-wrapper .bx-controls-direction a:first-child {
+        left: -3.9%;
+    }
+    
+    .bx-wrapper .bx-controls-direction a:last-child {
+        right: -3.9%;
+    }
+    :root {   
+        --title-principal-top: -9vh;
+        --title-principal-left: 30%;
+        --header-content-height: 7vh;
+        --button-height: 6vh;
+        --page-para-introduction-width: 65%;
+        --green-button-width: 50%;
+        --title-principal-width: 13%;
+        --hr-width: 25%;
+        --categories-subcontent-padding: 1.9%;
+        --big-title-space: calc(10vh * 0.7);
+        --classic-categorie-space: calc(5vh * 0.7);
+        --medium-space: calc(3vh * 0.7);
+        --low-space: calc(1.5vh * 0.7);
+        --classic-border-radius: 0.5vw;
+        --font-classic: 1.5vw;
+        --font-h1: 4.5vw;
+        --font-h2: 3.8vw;
+        --font-h3: 2.4vw;
+        --font-pageintroduction: 1.6vw;
+        --font-paragrapheintroduction: 1.3vw;
+        --font-button: 1.5vw;
+    }
+}
+
+
+/* ------------------------ Width : <768 ------------------------ */
+
+
+@media screen and (min-width: 641px) and (max-width: 768px) {
+    
+    .en-savoir-plus {
+        margin: 3vh auto 0 auto;
+    }
+    
+    .bx-wrapper .bx-controls-direction a:first-child {
+        left: -4.5%;
+    }
+    
+    .bx-wrapper .bx-controls-direction a:last-child {
+        right: -4.5%;
+    }
+
+    :root {   
+        --title-principal-top: -9vh;
+        --title-principal-left: 30%;
+        --header-content-height: 6vh;
+        --button-height: 5.8vh;
+        --page-para-introduction-width: 70%;
+        --green-button-width: 55%;
+        --title-principal-width: 14%;
+        --categories-subcontent: 100%;
+        --hr-width: 27%;
+        --global-content-width: 92%;
+        --categories-subcontent-padding: 6%;
+        --big-title-space: calc(10vh * 0.65);
+        --classic-categorie-space: calc(5vh * 0.65);
+        --medium-space: calc(3vh * 0.65);
+        --low-space: calc(1.5vh * 0.65);
+        --classic-border-radius: 0.6vw;
+        --font-classic: 1.8vw;
+        --font-h1: 4.8vw;
+        --font-h2: 4.1vw;
+        --font-h3: 2.6vw;
+        --font-pageintroduction: 1.8vw;
+        --font-paragrapheintroduction: 1.4vw;
+        --font-button: 1.8vw;
+    }
+}
+
+
+/* ------------------------ Width : <640px ------------------------ */
+
+
+@media screen and (min-width: 481px) and (max-width: 640px) {
+
+    .en-savoir-plus {
+        margin: 2vh auto 0 auto;
+        font-size: 2.1vw;
+    }
+    
+    .bx-wrapper .bx-controls-direction a:first-child {
+        left: -4.5%;
+    }
+    
+    .bx-wrapper .bx-controls-direction a:last-child {
+        right: -4.5%;
+    }
+    :root {   
+        --title-principal-top: -7vh;
+        --title-principal-left: 30%;
+        --header-content-height: 5.5vh;
+        --button-height: 5.6vh;
+        --page-para-introduction-width: 75%;
+        --green-button-width: 60%;
+        --title-principal-width: 14%;
+        --categories-subcontent: 100%;
+        --hr-width: 29%;
+        --global-content-width: 93%;
+        --categories-subcontent-padding: 7%;
+        --big-title-space: calc(10vh * 0.60);
+        --classic-categorie-space: calc(5vh * 0.60);
+        --medium-space: calc(3vh * 0.60);
+        --low-space: calc(1.5vh * 0.60);
+        --classic-border-radius: 0.7vw;
+        --font-classic: 2.3vw;
+        --font-h1: 5.5vw;
+        --font-h2: 4.7vw;
+        --font-h3: 3.1vw;
+        --font-pageintroduction: 2.1vw;
+        --font-paragrapheintroduction: 1.7vw;
+        --font-button: 2.3vw;
+    }
+}
+
+
+/* ------------------------ Width : <480px ------------------------ */
+
+
+@media screen and (min-width: 361px) and (max-width: 480px){
+    
+    .en-savoir-plus {
+        margin: 2vh auto 0 auto;
+    }
+    
+    .bx-wrapper .bx-controls-direction a:first-child {
+        left: -4.2%;
+    }
+    
+    .bx-wrapper .bx-controls-direction a:last-child {
+        right: -4.2%;
+    }
+    :root {   
+        --title-principal-top: -6vh;
+        --title-principal-left: 28%;
+        --header-content-height: 5vh;
+        --button-height: 5.4vh;
+        --page-para-introduction-width: 80%;
+        --green-button-width: 65%;
+        --title-principal-width: 16%;
+        --categories-subcontent: 100%;
+        --hr-width: 31%;
+        --global-content-width: 94%;
+        --categories-subcontent-padding: 8%;
+        --big-title-space: calc(10vh * 0.60);
+        --classic-categorie-space: calc(5vh * 0.60);
+        --medium-space: calc(3vh * 0.60);
+        --low-space: calc(1.5vh * 0.60);
+        --classic-border-radius: 0.8vw;
+        --font-classic: 3vw;
+        --font-h1: 6.5vw;
+        --font-h2: 5.4vw;
+        --font-h3: 3.7vw;
+        --font-pageintroduction: 2.5vw;
+        --font-paragrapheintroduction: 2.0vw;
+        --font-button: 3vw;
+    }
+}
+
+
+/* ------------------------ Width : <360px ------------------------ */
+
+
+@media screen and (min-width: 321px) and (max-width: 360px) {
+
+    .en-savoir-plus {
+        margin: 2vh auto 0 auto;
+    }
+    
+    .bx-wrapper .bx-controls-direction a:first-child {
+        left: -4.2%;
+    }
+    
+    .bx-wrapper .bx-controls-direction a:last-child {
+        right: -4.2%;
+    }
+    :root {   
+        --title-principal-top: -5vh;
+        --title-principal-left: 25%;
+        --header-content-height: 4.5vh;
+        --button-height: 5.2vh;
+        --page-para-introduction-width: 85%;
+        --green-button-width: 70%;
+        --title-principal-width: 17%;
+        --categories-subcontent: 100%;
+        --hr-width: 33%;
+        --global-content-width: 95%;
+        --categories-subcontent-padding: 9%;
+        --big-title-space: calc(10vh * 0.55);
+        --classic-categorie-space: calc(5vh * 0.55);
+        --medium-space: calc(3vh * 0.55);
+        --low-space: calc(1.5vh * 0.55);
+        --classic-border-radius: 0.9vw;
+        --font-classic: 3.5vw;
+        --font-h1: 6.8vw;
+        --font-h2: 5.8vw;
+        --font-h3: 4.3vw;
+        --font-pageintroduction: 2.9vw;
+        --font-paragrapheintroduction: 2.3vw;
+        --font-button: 3.5vw;
+    }
+}
+
+/* ------------------------ Width : <320px ------------------------ */
+
+
+@media screen and (max-width: 320px) {
+    :root {   
+        --title-principal-top: -4vh;
+        --title-principal-left: 20%;
+        --header-content-height: 4vh;
+        --button-height: 5vh;
+        --page-para-introduction-width: 90%;
+        --green-button-width: 75%;
+        --title-principal-width: 18%;
+        --categories-subcontent: 100%;
+        --hr-width: 35%;
+        --global-content-width: 95%;
+        --categories-subcontent-padding: 10%;
+        --big-title-space: calc(10vh * 0.5);
+        --classic-categorie-space: calc(5vh * 0.5);
+        --medium-space: calc(3vh * 0.5);
+        --low-space: calc(1.5vh * 0.5);
+        --classic-border-radius: 1vw;
+        --font-classic: 3.9vw;
+        --font-h1: 7vw;
+        --font-h2: 6vw;
+        --font-h3: 4.6vw;
+        --font-pageintroduction: 3.1vw;
+        --font-paragrapheintroduction: 2.6vw;
+        --font-button: 3.9vw;
+    }
+}

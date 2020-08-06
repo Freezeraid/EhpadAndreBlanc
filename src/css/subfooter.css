@@ -1,0 +1,143 @@
+/* --------------------------------------------------------------------- */
+/*                          CSS SUBFOOTER TOTAL                          */
+/* --------------------------------------------------------------------- */
+
+:root {
+    --font-subfooter: 0.65vw;
+    --padding-subfooter: 2vh;
+}
+
+
+#subfooter {
+    padding: var(--padding-subfooter) 0;
+    border-top: 1px solid var(--color-greylight);
+    box-sizing: border-box;
+}
+
+
+/* ------------------------ CSS SUBFOOTER SPAN ------------------------ */
+
+
+#subfooter span {
+    text-align: center;
+    display: block;
+    font-size: var(--font-subfooter);
+    font-weight: var(--font-heavy-weight);
+}
+
+
+/* ------------------------ CSS SUBFOOTER LINK ------------------------ */
+
+
+#subfooter a {
+    border-bottom: 1px solid transparent;
+    box-sizing: border-box;
+}
+
+#subfooter a:hover {
+    border-color: var(--color-pureblack);
+    transition: all ease-in-out 0.3s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                          CSS SUBFOOTER RESPONSIVE                          */
+/* -------------------------------------------------------------------------- */
+
+/* ------------------------ Width >1920px ------------------------ */
+
+
+@media screen and (min-width: 1920px) {
+
+    :root {
+        --font-subfooter: 0.65vw;
+        --padding-subfooter: 2vh;
+    }
+}
+
+
+/* ------------------------ Width <1366px ------------------------ */
+
+
+@media screen and (min-width: 1025px) and (max-width: 1367px) {
+    :root {
+        --font-subfooter: 0.85vw;
+        --padding-subfooter: 1.5vh;
+    }
+}
+
+
+/* ------------------------ Width <1024px ------------------------ */
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    :root {
+        --font-subfooter: 0.95vw;
+        --padding-subfooter: 1.4vh;
+    }
+}
+
+
+/* ------------------------ Width <768px ------------------------ */
+
+
+@media screen and (min-width: 641px) and (max-width: 768px) {
+    :root {
+        --font-subfooter: 1.1vw;
+        --padding-subfooter: 1.3vh;
+    }
+}
+
+
+/* ------------------------ Width < 640px ------------------------ */
+
+
+@media screen and (min-width: 481px) and (max-width: 640px) {
+    :root {
+        --font-subfooter: 1.35vw;
+        --padding-subfooter: 1.2vh;
+    }
+}
+
+
+/* ------------------------ Width <480px ------------------------ */
+
+
+@media screen and (min-width: 361px) and (max-width: 480px) {
+    :root {
+        --font-subfooter: 1.6vw;
+        --padding-subfooter: 1.1vh;
+    }
+}
+
+
+/* ------------------------ Width <360px ------------------------ */
+
+
+@media screen and (min-width: 321px) and (max-width: 360px) {
+    :root {
+        --font-subfooter: 1.8vw;
+        --padding-subfooter: 1vh;
+    }
+}
+
+
+/* ------------------------ Width : <320px ------------------------ */
+
+
+@media screen and (max-width: 320px) {
+    :root {
+        --font-subfooter: 2vw;
+        --padding-subfooter: 0.9vh;
+    }
+}

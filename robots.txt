@@ -1,0 +1,12 @@
+User-Agent: *
+Disallow: /adminehpad.php
+Disallow: /error404.php
+Disallow: /paneladmin.php
+Disallow: /uploadfile.php
+Disallow: /src/php/src/pdf
+Noindex: /adminehpad.php
+Noindex: /error404.php
+Noindex: /paneladmin.php
+Noindex: /uploadfile.php
+Noindex: /src/php/src/pdf
+Sitemap: http://ehpadandreblanc.fr/sitemap.xml

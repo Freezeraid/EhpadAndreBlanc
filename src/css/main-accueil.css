@@ -1,0 +1,261 @@
+/* --------------------------------------------------------------------- */
+/*                          CSS MAIN COMPOSENTS                          */
+/* --------------------------------------------------------------------- */
+
+
+
+:root{
+    --google-ehpad-height: 70vh;
+    --accueil-histoire-width: 55%;
+    --accueil-histoire-padding: 3%;
+    --padding-bx-slider: 2.5% 2.5% 0 2.5%;
+    --padding-bx-viewport: 2%;
+    --bx-controler-position: -4.5%;
+}
+
+
+.categories-content {
+    margin-bottom: var(--big-title-space);
+    background-color: var(--color-purewhite);
+    border: 1px solid #D2D2D2;
+    box-sizing: border-box;
+}
+
+.categories-content > * {
+    display: inline-block;
+    width: var(--categories-subcontent);
+    padding: var(--categories-subcontent-padding);
+    box-sizing: border-box;    
+}
+
+.categories-content > img {
+    vertical-align: top;
+}
+
+.accueil-histoire-ehpad {
+    background-image: url("../img/photo_pierrefeu-5.jpg");
+    background-position: center;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.accueil-histoire-ehpad div {
+    margin: 0 auto;
+    background-color: var(--color-transparencywhite);
+    padding: var(--accueil-histoire-padding);
+    width: var(--accueil-histoire-width);
+    border-right: 1px solid var(--color-purewhite);
+    border-left: 1px solid var(--color-purewhite);
+    box-sizing: border-box;
+}
+
+.accueil-histoire-ehpad div > * {
+    display: block;
+    margin: 0 auto;
+}
+
+.accueil-histoire-ehpad div > h2 {
+    margin: var(--low-space) 0;
+}
+
+.accueil-histoire-ehpad div > hr {
+    margin-bottom: var(--medium-space);
+}
+
+#googlemap-ehpad {
+    display: block;
+    height: var(--google-ehpad-height);
+    margin: var(--classic-categorie-space) auto;
+    width: 100%;
+    border: 1px solid #A2A2A2;
+    box-sizing: border-box;
+}
+
+
+/* ------------------------ CSS GLOBAL SLIDER ------------------------ */
+
+
+.bx-wrapper {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    border: 1px solid #D2D2D2 !important;
+    box-sizing: border-box;
+}
+
+.bx-wrapper > * {
+    display: inline-block;
+    width: 50%;
+    padding: var(--padding-bx-slider);
+    box-sizing: border-box;    
+}
+
+.bx-viewport {
+    padding-bottom: var(--padding-bx-viewport);
+}
+
+.bx-default-pager {
+    display: none;
+}
+
+.bx-controls {
+    padding: 0;
+}
+
+.bx-wrapper .bx-controls-direction a:first-child {
+    left: var(--bx-controler-position);
+}
+
+.bx-wrapper .bx-controls-direction a:last-child {
+    right: var(--bx-controler-position);
+}
+
+.bx-prev {
+    z-index: 0 !important;
+}
+
+.bx-next {
+    z-index: 0 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------------------------------------- */
+/*                          CSS MAIN RESPONSIVE                   */
+/* -------------------------------------------------------------- */
+
+
+/* ------------------------ Width : >1920px ------------------------ */
+
+@media screen and (min-width: 1920px) {
+
+    :root{
+        --google-ehpad-height: 75vh; /*/*/
+        --accueil-histoire-width: 50%; /*/*/
+        --accueil-histoire-padding: 3%;
+        --padding-bx-slider: 2.5% 2.5% 0 2.5%;
+        --padding-bx-viewport: 2%;
+        --bx-controler-position: -4.5%;
+    }
+}
+
+
+/* ------------------------ Width : <1366px ------------------------ */
+
+
+@media screen and (min-width: 1025px) and (max-width: 1367px) {
+
+    :root{
+        --google-ehpad-height: 65vh;
+        --accueil-histoire-width: 60%;
+        --accueil-histoire-padding: 3%;
+        --padding-bx-slider: 2.5% 2.5% 0 2.5%;
+        --padding-bx-viewport: 2%;
+        --bx-controler-position: -4.5%;
+    }
+}
+
+
+/* ------------------------ Width <1024 ------------------------ */
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+    :root{
+        --google-ehpad-height: 60vh;
+        --accueil-histoire-width: 65%;
+        --accueil-histoire-padding: 3%;
+        --padding-bx-slider: 2.5% 2.5% 0 2.5%;
+        --padding-bx-viewport: 2%;
+        --bx-controler-position: -4.5%;
+    }
+}
+
+
+/* ------------------------ Width <768 ------------------------ */
+
+@media screen and (min-width: 641px) and (max-width: 768px) {
+
+    :root{
+        --google-ehpad-height: 55vh;
+        --accueil-histoire-width: 70%;
+        --accueil-histoire-padding: 3%;
+        --padding-bx-slider: 2.5% 2.5% 0 2.5%;
+        --padding-bx-viewport: 2%;
+        --bx-controler-position: -4.5%;
+    }
+}
+
+
+/* ------------------------ Width : <640px ------------------------ */
+
+@media screen and (min-width: 481px) and (max-width: 640px) {
+
+    :root{
+        --google-ehpad-height: 50vh;
+        --accueil-histoire-width: 72.5%;
+        --accueil-histoire-padding: 3%;
+        --padding-bx-slider: 2.5% 2.5% 0 2.5%;
+        --padding-bx-viewport: 2%;
+        --bx-controler-position: -4.5%;
+    }
+}
+
+
+/* ------------------------ Width : <480px ------------------------ */
+
+
+@media screen and (min-width: 361px) and (max-width: 480px) {
+
+    :root{
+        --google-ehpad-height: 45vh;
+        --accueil-histoire-width: 75%;
+        --accueil-histoire-padding: 3%;
+        --padding-bx-slider: 2.5% 2.5% 0 2.5%;
+        --padding-bx-viewport: 2%;
+        --bx-controler-position: -4.5%;
+    }
+}
+
+
+/* ------------------------ Width : <360px ------------------------ */
+
+
+@media screen and (max-width: 321px) and (max-width: 360px) {
+
+    :root{
+        --google-ehpad-height: 40vh;
+        --accueil-histoire-width: 77.5%;
+        --accueil-histoire-padding: 3%;
+        --padding-bx-slider: 2.5% 2.5% 0 2.5%;
+        --padding-bx-viewport: 2%;
+        --bx-controler-position: -4.5%;
+    }
+}
+
+
+/* ------------------------ Width : <320px ------------------------ */
+
+
+@media screen and (max-width: 320px) {
+
+    :root{
+        --google-ehpad-height: 35vh;
+        --accueil-histoire-width: 80%;
+        --accueil-histoire-padding: 3%;
+        --padding-bx-slider: 2.5% 2.5% 0 2.5%;
+        --padding-bx-viewport: 2%;
+        --bx-controler-position: -4.5%;
+    }
+}
